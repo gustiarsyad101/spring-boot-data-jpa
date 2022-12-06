@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.springbootdatajpa.model.Tutorial;
+import com.springbootdatajpa.model.ModelTutorial;
 
-public interface TutorialRepository extends JpaRepository<Tutorial, Long>  {
-	List<Tutorial> findByTitleContaining(String title);
+public interface TutorialRepository extends JpaRepository<ModelTutorial, Long>  {
+	List<ModelTutorial> findByTitleContaining(String title);
 }
